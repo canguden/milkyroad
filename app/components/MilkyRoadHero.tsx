@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import icon from "@/public/icon-milkyroad.png";
+import logo from "@/public/milkyroad-logo.svg";
 import Link from "next/link";
 
 const MilkyRoadHero = () => {
@@ -43,7 +43,13 @@ const MilkyRoadHero = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h1>Milkyroad Inc.</h1>
+            <Image
+              src={logo}
+              alt="MilkyRoad Inc"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
           </motion.div>
           <motion.p
             className="max-w-2xl text-xl md:text-2xl mb-8"
@@ -65,7 +71,7 @@ const MilkyRoadHero = () => {
 
             <a
               href="mailto:contact@milkyroad.com"
-              className="inline-block mt-4 px-6 py-3 bg-gradient-to-br from-blue-900 via-purple-900 to-pink-800 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
+              className="inline-block mt-4 px-6 py-3 bg-blue-500 transition-all duration-300"
             >
               Contact us: hi@milkyroad.nl
             </a>
@@ -74,7 +80,7 @@ const MilkyRoadHero = () => {
             <div className="justify-between flex items-center">
               <div className="flex items-center gap-2">
                 <Image
-                  src={icon}
+                  src={logo}
                   alt="MilkyRoad Inc"
                   width={40}
                   height={40}
@@ -84,7 +90,7 @@ const MilkyRoadHero = () => {
               </div>
               <div>
                 <Link
-                  className="inline-block text-sm px-6 py-3 bg-gradient-to-br from-blue-900 via-purple-900 to-pink-800 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
+                  className="inline-block text-sm px-6 py-3 bg-blue-500 transition-all duration-300"
                   href="https://Snaparoid.com"
                 >
                   Snaparoid →

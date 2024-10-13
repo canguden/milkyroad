@@ -1,9 +1,9 @@
-import MilkyRoadHero from "./components/landing-page";
+import MilkyRoadHero from "./components/MilkyRoadHero";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <MilkyRoadHero />
-    </main>
+    </>
   );
 }
