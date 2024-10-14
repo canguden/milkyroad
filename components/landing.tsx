@@ -23,7 +23,7 @@ const Landing = () => {
               alt="Hero Image"
               height={1600}
               width={2400}
-              className="object-cover h-[500px] w-full"
+              className="object-cover h-[500px] lg:h-[650px] w-full"
             />
           </div>
         </motion.div>
@@ -59,12 +59,13 @@ const Landing = () => {
             We&apos;re a team of engineers, pushing the boundaries of
             what&apos;s both useful and possible in the digital world. If this
             resonates with you, let&apos;s create something extraordinary
-            together. <Link
-            className="hover:underline text-blue-400 hover:underline-offset-4"
-            href="https://milkyroad.nl"
-          >
-            hi@milkyroad.nl
-          </Link>
+            together.{" "}
+            <Link
+              className="hover:underline text-blue-400 hover:underline-offset-4"
+              href="https://milkyroad.nl"
+            >
+              hi@milkyroad.nl
+            </Link>
           </p>
         </motion.div>
       </main>
@@ -77,7 +78,6 @@ const Landing = () => {
       >
         <p className="text-sm text-gray-400">
           © 2024 Milkyroad Inc. All rights reserved.
- 
         </p>
       </motion.footer>
     </div>
