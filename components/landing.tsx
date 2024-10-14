@@ -37,7 +37,7 @@ const Landing = () => {
           <h1 className="text-4xl font-bold mb-6">Milkyroad Inc</h1>
           <p className="text-sm lg:text-lg mb-6">
             At Milkyroad, we specialize in building apps that merge timeless
-            experiences with modern innovations. Why? Because we&aposre the ones
+            experiences with a modern twist. Why? Because we&apos;re the ones
             who fondly say, &apos;Things were just better back in the day.&apos;
             Sorry, Gen Z!
           </p>
@@ -59,25 +59,25 @@ const Landing = () => {
             We&apos;re a team of engineers, pushing the boundaries of
             what&apos;s both useful and possible in the digital world. If this
             resonates with you, let&apos;s create something extraordinary
-            together.
+            together. <Link
+            className="hover:underline text-blue-400 hover:underline-offset-4"
+            href="https://milkyroad.nl"
+          >
+            hi@milkyroad.nl
+          </Link>
           </p>
         </motion.div>
       </main>
 
       <motion.footer
-        className="w-full max-w-4xl text-center mt-12 pb-6"
+        className="w-full max-w-4xl text-center mt-12 pb-6 px-6"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.8 }}
       >
         <p className="text-sm text-gray-400">
-          © 2024 Milkyroad Inc. All rights reserved. -{" "}
-          <Link
-            className="hover:underline text-blue-400 hover:underline-offset-4"
-            href="https://snaparoid.com"
-          >
-            hi@milkyroad.nl
-          </Link>
+          © 2024 Milkyroad Inc. All rights reserved.
+ 
         </p>
       </motion.footer>
     </div>
